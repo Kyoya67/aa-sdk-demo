@@ -1,5 +1,5 @@
 import { Hex, createWalletClient, http, publicActions } from "viem";
-import { arbitrumSepolia } from "viem/chains";
+import { sepolia } from "viem/chains";
 import { privateKeyToAccount } from "viem/accounts";
 import Example from "../artifacts/Example.json";
 import dotenv from "dotenv";
@@ -8,13 +8,13 @@ dotenv.config();
 
 const { abi, bin } = Example["contracts"]["contracts/Example.sol:Example"];
 
-const privateKey = process.env.PRIVATE_KEY;
-const account = privateKeyToAccount(privateKey as Hex);
+const privateKey = `0x${process.env.PRIVATE_KEY}` as Hex;
+const account = privateKeyToAccount(privateKey);
 
 (async () => {
   const client = createWalletClient({
     account,
-    chain: arbitrumSepolia,
+    chain: sepolia,
     transport: http(process.env.API_URL),
   }).extend(publicActions);
 
@@ -23,6 +23,9 @@ const account = privateKeyToAccount(privateKey as Hex);
     bytecode: `0x${bin}`,
   });
 
-  const receipt = await client.getTransactionReceipt({ hash });
-  console.log(receipt);
+  console.log("Deployment transaction hash:", hash);
+  console.log("Waiting for transaction to be mined...");
+
+  const receipt = await client.waitForTransactionReceipt({ hash });
+  console.log("Contract deployed at:", receipt.contractAddress);
 })();

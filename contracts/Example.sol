@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.25;
+pragma solidity 0.8.29;
 
 contract Example {
-  uint public x;
+    uint public x;
 
-  event XChanged(uint);
+    event XChanged(uint);
 
-  function changeX(uint _x) external {
-    x = _x;
-    emit XChanged(_x);
-  }
+    function changeX(uint _x) external {
+        x = _x;
+        emit XChanged(_x);
+    }
 }
