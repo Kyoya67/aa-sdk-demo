@@ -1,4 +1,9 @@
 .gitignore
 .env
 .env.local
+.env*.local
 node_modules
+.next
+artifacts
+cache
+coverage

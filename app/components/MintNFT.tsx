@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useEffect } from 'react';
 import { LocalAccountSigner, sepolia } from "@alchemy/aa-core";
 import { createModularAccountAlchemyClient } from "@alchemy/aa-alchemy";
@@ -29,7 +27,7 @@ export function MintNFT() {
             chain: sepolia,
             signer,
             gasManagerConfig: {
-                policyId: "21bea94d-cc80-45e9-838b-525ff67267ae",
+                policyId: process.env.POLICY_ID!,
             },
         });
 
@@ -64,7 +62,7 @@ export function MintNFT() {
                 chain: sepolia,
                 signer,
                 gasManagerConfig: {
-                    policyId: "21bea94d-cc80-45e9-838b-525ff67267ae",
+                    policyId: "21bea94d-cc80-45e9-838b-525ff67267ae", // この値は.env.localから取得する必要があります
                 },
             });
 
