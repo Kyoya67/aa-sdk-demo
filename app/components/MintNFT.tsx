@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react';
 import { LocalAccountSigner, sepolia } from "@alchemy/aa-core";
 import { createModularAccountAlchemyClient } from "@alchemy/aa-alchemy";
@@ -11,28 +13,32 @@ export function MintNFT() {
     const [result, setResult] = useState<string>('');
     const [walletAddress, setWalletAddress] = useState<string>('');
     const [smartAccountAddress, setSmartAccountAddress] = useState<string>('');
+    const [signer, setSigner] = useState<any>(null);
+    const [client, setClient] = useState<any>(null);
 
     const generateNewWallet = async () => {
         // Generate a random private key
         const privateKey = `0x${require("crypto").randomBytes(32).toString("hex")}` as `0x${string}`;
 
         // Create signer
-        const signer = LocalAccountSigner.privateKeyToAccountSigner(privateKey);
-        const address = await signer.getAddress();
+        const newSigner = LocalAccountSigner.privateKeyToAccountSigner(privateKey);
+        const address = await newSigner.getAddress();
         setWalletAddress(address);
+        setSigner(newSigner);
 
         // Create client to get smart account address
-        const client = await createModularAccountAlchemyClient({
+        const newClient = await createModularAccountAlchemyClient({
             apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY!,
             chain: sepolia,
-            signer,
+            signer: newSigner,
             gasManagerConfig: {
-                policyId: process.env.POLICY_ID!,
+                policyId: "21bea94d-cc80-45e9-838b-525ff67267ae",
             },
         });
+        setClient(newClient);
 
         // Get and set smart account address
-        const smartAccount = await client.getAddress();
+        const smartAccount = await newClient.getAddress();
         setSmartAccountAddress(smartAccount);
     };
 
@@ -42,6 +48,11 @@ export function MintNFT() {
     }, []);
 
     const handleMint = async () => {
+        if (!client || !signer) {
+            setResult('ウォレットが初期化されていません。再度お試しください。\n');
+            return;
+        }
+
         try {
             setLoading(true);
             setResult('NFTのミントを開始します...\n');
@@ -92,9 +103,6 @@ export function MintNFT() {
             const txHash = await client.waitForUserOperationTransaction(result);
             setResult(prev => prev + `トランザクションハッシュ: ${txHash}\n`);
             setResult(prev => prev + `NFTのミントが完了しました！\n`);
-
-            // Generate new wallet for next mint
-            await generateNewWallet();
 
         } catch (error) {
             console.error('Error:', error);
