@@ -1,0 +1,96 @@
+{
+  "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy_aa-accounts_node_modules_viem__esm_utils_ccip_js.js"
+    ]
+  },
+  "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows": {
+    "id": "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "node_modules/@alchemy/aa-accounts/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./nodecrypto.mjs": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./nodecrypto.mjs",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy_aa-alchemy_node_modules_turnkey_api-key-stamper_dist_-37381e.js"
+    ]
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./purejs.mjs": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./purejs.mjs",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy_aa-alchemy_node_modules_turnkey_api-key-stamper_dist_-7ec223.js"
+    ]
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./webcrypto.mjs": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/@turnkey/api-key-stamper/dist/index.mjs -> ./webcrypto.mjs",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy_aa-alchemy_node_modules_turnkey_api-key-stamper_dist_-28ca1b.js"
+    ]
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "node_modules/@alchemy/aa-alchemy/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-core/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "node_modules/@alchemy/aa-core/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy_aa-core_node_modules_viem__esm_utils_ccip_js.js"
+    ]
+  },
+  "node_modules/@alchemy/aa-core/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows": {
+    "id": "node_modules/@alchemy/aa-core/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows",
+    "files": []
+  },
+  "node_modules/@alchemy/aa-core/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "node_modules/@alchemy/aa-core/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": []
+  },
+  "node_modules/@wagmi/core/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "node_modules/@wagmi/core/node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": []
+  },
+  "node_modules/@wagmi/core/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows": {
+    "id": "node_modules/@wagmi/core/node_modules/viem/_esm/utils/rpc/webSocket.js -> isows",
+    "files": []
+  },
+  "node_modules/@wagmi/core/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "node_modules/@wagmi/core/node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": []
+  },
+  "node_modules/alchemy-sdk/dist/esm/index-ed773d96.js -> ./alchemy-provider-f935b12b.js": {
+    "id": "node_modules/alchemy-sdk/dist/esm/index-ed773d96.js -> ./alchemy-provider-f935b12b.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy-sdk_dist_esm_alchemy-provider-f935b12b_js.js"
+    ]
+  },
+  "node_modules/alchemy-sdk/dist/esm/index-ed773d96.js -> ./alchemy-websocket-provider-bce54fc6.js": {
+    "id": "node_modules/alchemy-sdk/dist/esm/index-ed773d96.js -> ./alchemy-websocket-provider-bce54fc6.js",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_alchemy-sdk_dist_esm_alchemy-websocket-provider-bce54fc6_js.js"
+    ]
+  },
+  "node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js": {
+    "id": "node_modules/viem/_esm/actions/public/call.js -> ../../utils/ccip.js",
+    "files": []
+  },
+  "node_modules/viem/_esm/utils/rpc/webSocket.js -> isows": {
+    "id": "node_modules/viem/_esm/utils/rpc/webSocket.js -> isows",
+    "files": []
+  },
+  "node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1": {
+    "id": "node_modules/viem/_esm/utils/signature/recoverPublicKey.js -> @noble/curves/secp256k1",
+    "files": []
+  }
+}
